@@ -1,0 +1,44 @@
+@font-face {
+  font-family: 'Inter var';
+  font-weight: 100 900;
+  font-display: block;
+  font-style: normal;
+  font-named-instance: 'Regular';
+  src: url(/fonts/Inter-roman-latin.var.woff2) format('woff2');
+}
+
+@font-face {
+  font-family: 'iA Writer Mono S';
+  font-weight: 100 900;
+  font-display: block;
+  font-style: normal;
+  font-named-instance: 'Regular';
+  src: url(/fonts/iAWriterMonoS-Regular.woff2) format('woff2');
+}
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Reset tremor font-family */
+:root {
+  --tr-font-family: 'Inter var' !important;
+}
+
+/* Fix antd picker */
+.ant-picker-active-bar {
+  background: transparent !important;
+}
+
+.ant-picker-range-separator {
+  display: inline-flex;
+  align-items: center;
+  color: #cbccd1;
+  padding-left: 0px !important;
+  padding-right: 16px !important;
+}
+
+.ant-picker-input > input {
+  outline: none;
+  max-width: 100px;
+}
